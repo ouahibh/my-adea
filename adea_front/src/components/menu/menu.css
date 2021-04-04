@@ -1,0 +1,48 @@
+.menu-contenair {
+  width: 80%;
+  height: 3rem;
+  background-color: rgba(0, 0, 255, 0.699);
+  border: solid 0.01rem #7f87ff83;
+  border-radius: 0rem 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  position: fixed;
+  z-index: 12;
+}
+
+.menu-left{
+    width: 40%;
+    height: inherit;
+}
+.menu-right{
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mybutton{
+    background-color: rgb(38, 147, 215);
+    border-radius: 1rem;
+}
+.login-popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: #29608554;
+    display: flex;
+    flex-flow: column;
+}
+.close-top{
+    width: 100vw;
+    height: 230px;
+}
+.login-container{
+    width: 100vw;
+    height: 400px;
+}
+.close-bottom{
+    width: 100vw;
+    height: 400px;
+}
