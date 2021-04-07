@@ -8,6 +8,7 @@ import {
 import Home from "./pages/home/home";
 import Gestion from "./admin/gestion/gestion";
 import Login from "./components/login/login";
+import Signup from "./components/signup/signup";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/signup">
+            <Signup />
           </Route>
         </Switch>
       </Router>

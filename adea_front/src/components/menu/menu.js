@@ -1,16 +1,10 @@
 import "./menu.css";
 import { Button } from "@material-ui/core";
 import React from "react";
-//import { useHistory } from "react-router";
 import Popup from "reactjs-popup";
 import Login from "../login/login";
 
 const Menu = () => {
-  //const history = useHistory();
-  //const navigate = (path) => {
-  //history.push(path);
-  //};
-
   return (
     <div className={"menu-contenair"}>
       <div className={"menu-left"}></div>
@@ -18,8 +12,13 @@ const Menu = () => {
         <Button
           style={{
             color: "white",
-            backgroundColor: "rgb(10, 126, 155)",
-            borderRadius: ".2rem 1rem .2rem",
+          }}
+        >
+          Accueil
+        </Button>
+        <Button
+          style={{
+            color: "white",
           }}
         >
           Association
@@ -27,17 +26,6 @@ const Menu = () => {
         <Button
           style={{
             color: "white",
-            backgroundColor: "rgb(10, 126, 155)",
-            borderRadius: ".2rem 1rem .2rem",
-          }}
-        >
-          Association
-        </Button>
-        <Button
-          style={{
-            color: "white",
-            backgroundColor: "rgb(10, 126, 155)",
-            borderRadius: ".2rem 1rem .2rem",
           }}
         >
           Association
@@ -47,8 +35,6 @@ const Menu = () => {
             <Button
               style={{
                 color: "white",
-                backgroundColor: "rgb(10, 126, 155)",
-                borderRadius: ".2rem 1rem .2rem",
               }}
             >
               Login

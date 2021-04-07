@@ -1,10 +1,8 @@
 import "./gestion.css";
 
-import React, { useCallback } from "react";
+import React from "react";
 import GestionNavBar from "../../components/gestionnavbar/gestionnavbar";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router";
-
 import { Link } from "react-router-dom";
 import { logout, selectUser } from "../../features/userSlice";
 
@@ -21,7 +19,7 @@ const Gestion = () => {
       {user ? (
         <div className={"adminC"}>
           <GestionNavBar />
-          <h1 style={{color:'red'}} >{user.email}</h1>
+          <h1 style={{ color: "red" }}>{user.email}</h1>
           <button onClick={(e) => handleLogout(e)}>Déconnexion</button>
         </div>
       ) : (
