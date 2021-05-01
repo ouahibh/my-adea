@@ -1,14 +1,14 @@
 .menu-contenair {
-  width: 80%;
+  width: 100%;
   height: 3rem;
-  background-color: rgba(0, 0, 255, 0.699);
-  border: solid 0.01rem #7f87ff83;
-  border-radius: 0rem 0 1.2rem;
+  background-color: hsl(194, 100%, 46%);
+  /*border: solid 0.01rem #7f87ff83;
+  /*border-radius: 0rem 0 1.2rem;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 4px;
-  position: fixed;
+  
   z-index: 12;
 }
 
@@ -23,10 +23,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.mybutton{
-    background-color: rgb(38, 147, 215);
-    border-radius: 1rem;
-}
+
 .login-popup{
     width: 100vw;
     height: 100vh;

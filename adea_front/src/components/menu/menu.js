@@ -12,6 +12,7 @@ const Menu = () => {
         <Button
           style={{
             color: "white",
+            fontSize: "larger",
           }}
         >
           Accueil
@@ -19,6 +20,7 @@ const Menu = () => {
         <Button
           style={{
             color: "white",
+            fontSize: "larger",
           }}
         >
           Association
@@ -26,6 +28,7 @@ const Menu = () => {
         <Button
           style={{
             color: "white",
+            fontSize: "larger",
           }}
         >
           Association
@@ -35,6 +38,7 @@ const Menu = () => {
             <Button
               style={{
                 color: "white",
+                fontSize: "larger",
               }}
             >
               Login

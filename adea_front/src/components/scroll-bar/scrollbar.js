@@ -5,7 +5,7 @@ import React from "react";
 const ScrollBar = () => {
   return (
     <div className={"myScroll"}>
-      <ProgressBar bgcolor="#0000FF" />
+      <ProgressBar bgcolor="#129DDE" />
     </div>
   );
 };
