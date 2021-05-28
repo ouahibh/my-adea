@@ -10,8 +10,7 @@ const Home = () => {
     <div>
       <ScrollBar />
       <div className={"myBody"}>
-        <Topnavbar/>
-        
+        <Topnavbar />
 
         <div className={"corps"}>
           <Slider />
