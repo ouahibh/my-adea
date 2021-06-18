@@ -1,15 +1,21 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 .container-slider {
-    position: relative;
-    width: 100%;
-    height: 35rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
 .sub-container-slider {
-    width: 50%;
-    height: 90%;
+  width: 48rem;
+  height: 19rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.img-max{
+  max-width: 768px;
+  max-height: 304px;
 }

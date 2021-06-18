@@ -117,7 +117,6 @@ body {
   height: 600px;
   width: 600px;
   z-index: 5;
-
   margin-left: 60px;
   border: 1px solid fade(white, 40%);
   background-color: fade(white, 20%);
@@ -140,17 +139,17 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     color: white;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 2.4em;
     letter-spacing: 0.03rem;
+    margin: 1rem 0 0 0;
   }
 }
+
 .container-signup {
   display: flex;
-
   flex-flow: column;
   align-items: center;
-  width: 40px;
-
+  width: 400px;
   padding: 30px 220px 0 0;
   height: 650px;
   text-align: center;
@@ -182,23 +181,19 @@ form {
     display: block;
     text-align: center;
     font-size: 18px;
-
     color: white;
-
     transition-duration: 0.25s;
     font-weight: 300;
-
     &:hover {
       background-color: fade(white, 40%);
     }
-
     &:focus {
-      background-color: white;
+      background-color: white lightgoldenrodyellow;
       width: 300px;
-
       color: @prim;
     }
   }
+
   .style-select {
     display: block;
     appearance: none;
@@ -206,22 +201,21 @@ form {
     border: 1px solid fade(white, 40%);
     background-color: fade(white, 20%);
     width: 300px;
-
     border-radius: 3px;
     padding: 10px 15px;
     margin: 0 auto 10px auto;
     display: block;
     text-align: center;
     font-size: 18px;
-
     color: white;
-
     transition-duration: 0.25s;
     font-weight: 300;
+
     & p {
       color: white;
       text-align: justify;
     }
+
     & #my-select-label {
       color: white;
       background-color: transparent;
@@ -238,7 +232,6 @@ form {
     &:focus {
       background-color: white;
       width: 300px;
-
       color: @prim;
     }
   }

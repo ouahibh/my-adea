@@ -20,8 +20,16 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     minWidth: 120,
   },
+  dropdownStyle: {
+    backgroundColor: "lightgoldenrodyellow",
+    borderRadius: "3%",
+    "& li": {
+      paddingLeft: theme.spacing(5),
+    },
+  },
+
   selectEmpty: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(3),
   },
 }));
 
@@ -124,7 +132,6 @@ const Signup = () => {
         </div>
         <div className={"container-signup"}>
           <h1>Bienvenue</h1>
-
           <form className={"form"}>
             <input
               type="text"
@@ -132,7 +139,6 @@ const Signup = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-
             <input
               type="text"
               placeholder="Votre email"
@@ -168,11 +174,14 @@ const Signup = () => {
                   id="my-select-label"
                   value={qualite}
                   onChange={(e) => setQualite(e.target.value)}
+                  MenuProps={{ classes: { paper: classes.dropdownStyle } }}
                 >
                   <MenuItem id="menu-item" value="parent">
                     Parent
                   </MenuItem>
-                  <MenuItem value="Psy">Psychologue</MenuItem>
+                  <MenuItem paddingLeft="1rem" value="Psy">
+                    Psychologue
+                  </MenuItem>
                   <MenuItem value="Ortho">Orthophoniste</MenuItem>
                   <MenuItem value="Educ">Educatrice</MenuItem>
                   <MenuItem value="responsable">Responsable</MenuItem>
