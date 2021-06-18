@@ -1,0 +1,85 @@
+.contenair-prise {
+  width: 100%;
+  height: 35rem;
+  margin: 6rem 0 3rem 0;
+}
+.title-prise {
+  display: flex;
+  justify-content: flex-start;
+  color: hsl(194, 100%, 46%);
+  margin-left: 10%;
+  margin-bottom: 3rem;
+  width: 85%;
+  height: 2rem;
+  border-bottom: solid 0.01rem #32a1ce;
+}
+.jumptarget:target {
+  padding-top: 5rem !important;
+  margin-top: -5rem !important;
+}
+#img-prise {
+  background-image: url("../../assets/img/salle_de_stimulation.jpg");
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prise-en-charge {
+  width: 75%;
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.26);
+  color: white;
+  padding: 2rem 3rem 2rem 3rem;
+  display: flex;
+  flex-flow: column;
+}
+.prise-en-charge:hover {
+  background-color: #121226;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prise-en-charge > h2 {
+  width: 85%;
+  height: auto;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+.priseEnChargeList {
+  width: 100%;
+  height: 70%;
+}
+b {
+  font-weight: bold;
+  vertical-align: baseline;
+}
+.priseEnChargeList ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.priseEnChargeList ol li {
+  counter-increment: my-awesome-counter;
+  list-style: none;
+  text-align: justify;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+  letter-spacing: .8px;
+}
+.priseEnChargeList ol li::before {
+  content: counter(my-awesome-counter) " / ";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 0.5rem;
+  margin-left: 0.9rem;
+  text-align: justify;
+}
+#my-txt p {
+  display: flex;
+  vertical-align: baseline;
+  text-align: justify;
+  letter-spacing: .8px;
+}

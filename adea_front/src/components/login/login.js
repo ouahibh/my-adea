@@ -39,6 +39,7 @@ const Login = () => {
       .catch((error) => {
         console.log(error);
       });
+      e.target.reset()
   };
   return (
     <div className={"wrapper"}>

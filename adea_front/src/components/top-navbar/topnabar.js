@@ -3,7 +3,7 @@ import "./topnabar.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
+
 
 const Topnavbar = () => {
   return (
@@ -19,18 +19,18 @@ const Topnavbar = () => {
             <span>adea.autisme@gmail.com</span>
           </div>
           <Link href={"https://www.facebook.com/ADEA.Bejaia"} target="_blank">
-            <div className="espace-style">
+            <div className="espace-style ">
               <FontAwesomeIcon
-                className="icon-style"
+                className="icon-style survole-style"
                 icon={["fab", "facebook-f"]}
               />
             </div>
           </Link>
         </>
         <>
-          <NavLink to="/contact" className="contact-style">
-            <span id="survole-style">Contact</span>
-          </NavLink>
+          <a href="/home/contact/#contact" className="contact-style">
+            <span className='survole-style'>Contact</span>
+          </a>
         </>
       </div>
     </div>

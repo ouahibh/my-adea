@@ -1,0 +1,109 @@
+.contenairContact {
+  margin-top: 2rem;
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.title-contact {
+  display: flex;
+  justify-content: flex-start;
+  color: hsl(194, 100%, 46%);
+  margin-left: 10%;
+  margin-bottom: 1rem;
+  width: 85%;
+  height: 2rem;
+  border-bottom: solid 0.01rem #32a1ce;
+}
+.jumptargetC:target {
+  padding-top: 6rem !important;
+  margin-top: -6rem !important;
+}
+.fromMpas {
+  margin-left: 5%;
+  width: 90%;
+  height: 32rem;
+  display: flex;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contenairFrom {
+  width: 50%;
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  border-radius: 0.3rem 0;
+  align-items: center;
+  background: #225fba;
+  background: -webkit-linear-gradient(top left, #225fba 0%, #94dde2 100%);
+  background: -moz-linear-gradient(top left, #225fba 0%, #94dde2 100%);
+  background: -o-linear-gradient(top left, #225fba 0%, #94dde2 100%);
+  background: linear-gradient(to bottom right, #225fba 0%, #94dde2 100%);
+}
+
+.contenairMaps {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../assets/img/Maps_ADEA.JPG");
+  background-size: cover;
+}
+textarea {
+  min-width: 30rem;
+  min-height: 10rem;
+  box-sizing: border-box;
+  border: 0.1rem solid hsl(210, 100%, 70%);
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.form input {
+  display: block;
+  appearance: none;
+  outline: 0;
+  border: 1px solid fade(white, 40%);
+  background-color: fade(white, 20%);
+  width: 30rem;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition-duration: 0.25s;
+  font-weight: 300;
+}
+/*.titleForm{
+    border: 1px solid rgba(255, 255, 255, 0.335);
+    background-color: rgba(255, 255, 255, 0.267) ;
+    width: 30rem;
+    border-radius: 3px;
+    padding: 10px 15px;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+input:hover {
+  background-color: fade(white, 40%);
+}
+input:focus {
+  background-color: white lightgoldenrodyellow;
+  width: 300px;
+}
+#not-mail {
+  display: none;
+  position: absolute;
+  top: 4px;
+  color: #ff4d4d;
+  right: 0;
+  transform-origin: 50% 50%;
+}
