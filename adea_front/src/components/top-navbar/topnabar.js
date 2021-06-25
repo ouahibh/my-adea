@@ -1,5 +1,5 @@
 import "./topnabar.css";
-
+import { NavHashLink } from "react-router-hash-link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "@material-ui/core";
@@ -29,9 +29,20 @@ const Topnavbar = () => {
           </>
         </div>
         <div className="contact-style">
-          <a href="/home/contact/#contact">
+          <NavHashLink
+            scroll={(el) => {
+              const yCoordinate =
+                el.getBoundingClientRect().top + window.pageYOffset;
+              const yOffset = -80;
+              window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: "smooth",
+              });
+            }}
+            to="/home/contact/#contact"
+          >
             <span className="survole-style">Contact</span>
-          </a>
+          </NavHashLink>
         </div>
       </div>
     </div>

@@ -8,30 +8,40 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const myMail = {
+    name: name,
+    email: email,
+    phone: phone,
+    message: message
+  }
+  const onSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "Gmail_ADEA_Web",
-        "template_y8385wb",
-        e.target,
-        "user_WNxFbwi2JIJYwFYL2oMwk"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    emailjs.send(
+      "Gmail_ADEA_Web",
+      "template_y8385wb",
+      myMail,
+      "user_WNxFbwi2JIJYwFYL2oMwk"
+    )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      setName('')
+      setPhone('')
+      setEmail('')
+      setMessage('')
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+      resetFrom()
   };
-
+  
+  const resetFrom = () => {
+    document.getElementById("resetMyForm").reset();
+  }
   return (
-    <div className="contenairContact" >
-      <div className="title-contact jumptargetC" id="contact" >
+    <div className="contenairContact">
+      <div className="title-contact" id="contact">
         <h2>Contactez-nous</h2>
       </div>
       <div className="fromMpas">
@@ -39,16 +49,18 @@ const Contact = () => {
           <div className="titleForm">
             <h2>Vous souhaitez nous aider ? Contactez-nous !</h2>
           </div>
-          <form className={"form"}>
+          <form onSubmit={onSubmit} className={"form"} id="resetMyForm">
             <input
-            id="contactInput"
+              required
+             id="contactInput"
               type="text"
               placeholder="Votre nom"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
-            id="contactInput"
+              required
+              id="contactInput"
               type="0560042603"
               placeholder="Votre téléphone"
               value={phone}
@@ -56,7 +68,8 @@ const Contact = () => {
             />
 
             <input
-            id="contactInput"
+              required
+              id="contactInput"
               type="mail"
               placeholder="Votre adresse mail"
               value={email}
@@ -67,19 +80,23 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
+              value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="message *"
-              value={message}
             />
-            <button type="submit" id="send-button" onClick={sendEmail}>
+            <button type="submit" id="send-button" >
               Envoyer
             </button>
           </form>
         </div>
-        
-          
-        <a className="contenairMaps"  href="https://goo.gl/maps/7WKN8x7xcwyyhmdg6" target="blank"/>
-        
+
+        <a
+          className="contenairMaps"
+          href="https://goo.gl/maps/7WKN8x7xcwyyhmdg6"
+          target="blank"
+        >
+          <div></div>
+        </a>
       </div>
     </div>
   );

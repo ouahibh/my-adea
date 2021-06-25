@@ -1,5 +1,6 @@
 import "./menu.css";
 import React from "react";
+import { NavHashLink } from "react-router-hash-link";
 import Popup from "reactjs-popup";
 import Login from "../login/login";
 import Don from "../don/don";
@@ -9,23 +10,71 @@ const Menu = () => {
     <div className={"menu-contenair"}>
       <div className="sub-conetenair">
         <div className={"menu-left"}>
-          <a href="/home/#accueil" className="acceuil-style">
+          <NavHashLink smooth to="/home/#accueil" className="acceuil-style">
             <span id="acceuil-hover-style">Acceuil</span>
-          </a>
+          </NavHashLink>
         </div>
         <div className={"menu-right"}>
-          <a href="/home/#quiSommeNous" className="button-style">
+          <NavHashLink
+            scroll={(el) => {
+              const yCoordinate =
+                el.getBoundingClientRect().top + window.pageYOffset;
+              const yOffset = -80;
+              window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: "smooth",
+              });
+            }}
+            to={"/home/#quiSommeNous"}
+            className="button-style"
+          >
             <span id="hover-style">Qui sommes-nous?</span>
-          </a>
-          <a href="/home/corpsPage/#notreMission" className="button-style">
+          </NavHashLink>
+          <NavHashLink
+            scroll={(el) => {
+              const yCoordinate =
+                el.getBoundingClientRect().top + window.pageYOffset;
+              const yOffset = -80;
+              window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: "smooth",
+              });
+            }}
+            to="/home/corpsPage/#notreMission"
+            className="button-style"
+          >
             <span id="hover-style">Nos objectifs</span>
-          </a>
-          <a href="/home/priseEnCharge/#priseEnCarge" className="button-style">
+          </NavHashLink>
+          <NavHashLink
+            scroll={(el) => {
+              const yCoordinate =
+                el.getBoundingClientRect().top + window.pageYOffset;
+              const yOffset = -80;
+              window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: "smooth",
+              });
+            }}
+            to="/home/priseEnCharge/#priseEnCarge"
+            className="button-style"
+          >
             <span id="hover-style">La prise en charge</span>
-          </a>
-          <a href="/home/adhesion/#adhesion" className="button-style">
+          </NavHashLink>
+          <NavHashLink
+            scroll={(el) => {
+              const yCoordinate =
+                el.getBoundingClientRect().top + window.pageYOffset;
+              const yOffset = -80;
+              window.scrollTo({
+                top: yCoordinate + yOffset,
+                behavior: "smooth",
+              });
+            }}
+            to="/home/adhesion/#adhesion"
+            className="button-style"
+          >
             <span id="hover-style">Adhérer</span>
-          </a>
+          </NavHashLink>
           <Popup
             trigger={
               <div className="button-style">
