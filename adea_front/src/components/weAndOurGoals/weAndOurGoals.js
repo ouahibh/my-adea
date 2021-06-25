@@ -3,9 +3,9 @@ import React from "react";
 import { Card } from "react-card-component";
 const WeAndOurGoals = () => {
   return (
-    <div className="corps-contenair">
-      <section className="whoAreWe">
-        <div className="titleW jumptargetW" id="quiSommeNous">
+    <div className="corps-contenair" >
+      <section className="whoAreWe" >
+        <div className="titleW" id="quiSommeNous">
           <h2>Qui sommes nous?</h2>
         </div>
         <div className="myText">

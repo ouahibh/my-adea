@@ -1,16 +1,17 @@
 import "./slider.css";
 import ImageGallery from "react-image-gallery";
-import ban from "../../assets/img/ban.jpg";
-import ban1 from "../../assets/img/ban2.webp";
-import ban3 from "../../assets/img/ban3.webp";
-import ban4 from "../../assets/img/ban4.jpg";
+import ban from "../../assets/img/ban.png";
+import ban1 from "../../assets/img/ban3.png";
+import ban3 from "../../assets/img/ban2.png";
+import ban4 from "../../assets/img/ban1.png";
+import ban5 from "../../assets/img/ban5.png";
 const images = [
   {
-    original: ban,
+    original: ban1,
     originalClass: "img-max",
   },
   {
-    original: ban1,
+    original: ban,
     originalClass: "img-max",
   },
   {
@@ -19,6 +20,10 @@ const images = [
   },
   {
     original: ban4,
+    originalClass: "img-max",
+  },
+  {
+    original: ban5,
     originalClass: "img-max",
   },
 ];
@@ -32,7 +37,7 @@ const Slider = () => {
             showIndex={false}
             autoPlay={true}
             showThumbnails={false}
-            slideDuration={2000}
+            slideDuration={3000}
             slideInterval={8000}
             showFullscreenButton={false}
             showPlayButton={false}

@@ -16,11 +16,6 @@
   border-bottom: solid 0.01rem #32a1ce;
 }
 
-.jumptargetC:target {
-  padding-top: 5rem !important;
-  margin-top: -5rem !important;
-}
-
 .fromMpas {
   width: 80%;
   height: 36rem;
@@ -50,6 +45,7 @@
   height: 100%;
   background-image: url("../../assets/img/Maps_ADEA.JPG");
   background-size: cover;
+  z-index: 10;
 }
 
 textarea {
@@ -92,7 +88,7 @@ textarea {
 
 #contactInput:focus {
   background-color: white lightgoldenrodyellow;
-  width: 300px;
+  width: 30rem;
 }
 
 #not-mail {
