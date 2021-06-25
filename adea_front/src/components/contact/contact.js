@@ -30,8 +30,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="contenairContact jumptargetC" id="contact">
-      <div className="title-contact " >
+    <div className="contenairContact" >
+      <div className="title-contact jumptargetC" id="contact" >
         <h2>Contactez-nous</h2>
       </div>
       <div className="fromMpas">
@@ -41,12 +41,14 @@ const Contact = () => {
           </div>
           <form className={"form"}>
             <input
+            id="contactInput"
               type="text"
               placeholder="Votre nom"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <input
+            id="contactInput"
               type="0560042603"
               placeholder="Votre téléphone"
               value={phone}
@@ -54,6 +56,7 @@ const Contact = () => {
             />
 
             <input
+            id="contactInput"
               type="mail"
               placeholder="Votre adresse mail"
               value={email}

@@ -49,11 +49,11 @@ body :-ms-input-placeholder {
   font-weight: 300;
 }
 .wrapperDon {
-  background: #5EA18F;
-  background: -webkit-linear-gradient(top left, #5ea18fc2 10%, #2ed1a6b0 100%);
-  background: -moz-linear-gradient(top left, #5ea18fc2 10%, #2ed1a6b0 100%);
-  background: -o-linear-gradient(top left, #5ea18fc2 10%, #2ed1a6b0 100%);
-  background: linear-gradient(to bottom right, #5ea18ff5 10%, #2ed1a6f3 100%);
+  background: #007CC5;
+  background: -webkit-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -moz-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -o-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: linear-gradient(to bottom right, #007CC5 0%, #67CAEF 100%);
   position: absolute;
   top: 50%;
   left: 0;

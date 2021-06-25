@@ -3,4 +3,8 @@
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: #94dde2;
+  height: 7px;
+  width: 100%;
+  
 }

@@ -7,13 +7,15 @@
   align-items: center;
   z-index: 11;
 }
+
 .sub-conetenair {
   width: 80%;
-  height: 3rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .menu-left {
   display: flex;
   justify-content: flex-start;
@@ -21,31 +23,39 @@
   width: 20%;
   height: inherit;
 }
+
 .menu-right {
   width: 70%;
   height: inherit;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+
 .acceuil-style {
   cursor: pointer;
-  color: hsl(194, 100%, 46%);
+  color: #007CC5;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }
+
+#acceuil-hover-style:hover {
+  color: #666666;
+}
+
 #hover-style:hover {
-  color: hsl(202, 100%, 39%);
-  border-bottom: solid 0.01rem #32a1ce;
+  color: #007CC5;
 }
+
 .button-style {
   cursor: pointer;
   color: #666666;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   border-right: solid 0.01rem #32a1ce;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
+
 .login-popup {
   width: 100vw;
   height: 100vh;
@@ -53,14 +63,17 @@
   display: flex;
   flex-flow: column;
 }
+
 .close-top {
   width: 100vw;
   height: 230px;
 }
+
 .login-container {
   width: 100vw;
   height: 400px;
 }
+
 .close-bottom {
   width: 100vw;
   height: 400px;

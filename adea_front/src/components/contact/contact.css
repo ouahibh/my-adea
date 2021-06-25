@@ -1,33 +1,34 @@
 .contenairContact {
-  margin-top: 2rem;
   width: 100%;
-  height: 35rem;
+  height: 39.6rem;
   display: flex;
   flex-flow: column;
+  align-items: center;
+  margin: 4rem 0 0 0;
 }
 
 .title-contact {
   display: flex;
   justify-content: flex-start;
-  color: hsl(194, 100%, 46%);
-  margin-left: 10%;
-  margin-bottom: 1rem;
-  width: 85%;
-  height: 2rem;
+  color: #007CC5;
+  margin: 0 0 1.5rem 0;
+  width: 80%;
   border-bottom: solid 0.01rem #32a1ce;
 }
+
 .jumptargetC:target {
-  padding-top: 6rem !important;
-  margin-top: -6rem !important;
+  padding-top: 5rem !important;
+  margin-top: -5rem !important;
 }
+
 .fromMpas {
-  margin-left: 5%;
-  width: 90%;
-  height: 32rem;
+  width: 80%;
+  height: 36rem;
   display: flex;
   border-radius: 0.3rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .contenairFrom {
   width: 50%;
   height: 100%;
@@ -37,11 +38,11 @@
   justify-content: space-evenly;
   border-radius: 0.3rem 0;
   align-items: center;
-  background: #225fba;
-  background: -webkit-linear-gradient(top left, #225fba 0%, #94dde2 100%);
-  background: -moz-linear-gradient(top left, #225fba 0%, #94dde2 100%);
-  background: -o-linear-gradient(top left, #225fba 0%, #94dde2 100%);
-  background: linear-gradient(to bottom right, #225fba 0%, #94dde2 100%);
+  background: #007CC5;
+  background: -webkit-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -moz-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -o-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: linear-gradient(to bottom right, #007CC5 0%, #67CAEF 100%);
 }
 
 .contenairMaps {
@@ -50,6 +51,7 @@
   background-image: url("../../assets/img/Maps_ADEA.JPG");
   background-size: cover;
 }
+
 textarea {
   min-width: 30rem;
   min-height: 10rem;
@@ -57,13 +59,16 @@ textarea {
   border: 0.1rem solid hsl(210, 100%, 70%);
   border-radius: 1rem;
   margin: 1rem 0;
+  padding: 1rem;
 }
+
 .form {
   padding: 20px 0;
   position: relative;
   z-index: 2;
 }
-.form input {
+
+#contactInput {
   display: block;
   appearance: none;
   outline: 0;
@@ -80,25 +85,16 @@ textarea {
   transition-duration: 0.25s;
   font-weight: 300;
 }
-/*.titleForm{
-    border: 1px solid rgba(255, 255, 255, 0.335);
-    background-color: rgba(255, 255, 255, 0.267) ;
-    width: 30rem;
-    border-radius: 3px;
-    padding: 10px 15px;
-    height: 3rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-input:hover {
+
+#contactInput:hover {
   background-color: fade(white, 40%);
 }
-input:focus {
+
+#contactInput:focus {
   background-color: white lightgoldenrodyellow;
   width: 300px;
 }
+
 #not-mail {
   display: none;
   position: absolute;

@@ -5,7 +5,7 @@ import React from 'react'
 const Foot = () => {
     return (
         <div className="contenairFoot">
-            <h2> Tous droits réservés <b>"d'un monde à l'autre"</b> © 2021 </h2>
+            <h4> Tous droits réservés <b>"d'un monde à l'autre"</b> © 2021 </h4>
         </div>
     )
 }

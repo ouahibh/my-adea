@@ -2,7 +2,7 @@ import "./menu.css";
 import React from "react";
 import Popup from "reactjs-popup";
 import Login from "../login/login";
-import Don from "../don/don"
+import Don from "../don/don";
 
 const Menu = () => {
   return (
@@ -10,7 +10,7 @@ const Menu = () => {
       <div className="sub-conetenair">
         <div className={"menu-left"}>
           <a href="/home/#accueil" className="acceuil-style">
-            <span id="hover-style">Acceuil</span>
+            <span id="acceuil-hover-style">Acceuil</span>
           </a>
         </div>
         <div className={"menu-right"}>

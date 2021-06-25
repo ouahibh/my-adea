@@ -14,6 +14,8 @@ import API from "../../api/api";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
 import Login from "../login/login";
+import Don from "../don/don";
+
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -106,7 +108,29 @@ const Signup = () => {
           )}
         </Popup>
 
-        <Button>
+        <Popup
+          trigger={
+            <Button
+              style={{
+                color: "white",
+              }}
+            >
+              Faire un don
+            </Button>
+          }
+          modal
+        >
+          {(close) => (
+            <div className={"login-popup"}>
+              <div className={"close-top"} onClick={close}></div>
+              <div className={"login-container"}>
+                <Don />
+              </div>
+              <div className={"close-bottom"} onClick={close}></div>
+            </div>
+          )}
+        </Popup>
+        {/*<Button>
           <Link
             to="/don"
             style={{
@@ -116,7 +140,7 @@ const Signup = () => {
           >
             Faire un don
           </Link>
-        </Button>
+          </Button>*/}
       </div>
 
       <div className={"wrapper-signup"}>

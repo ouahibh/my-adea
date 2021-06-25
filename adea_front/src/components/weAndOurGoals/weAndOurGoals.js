@@ -5,7 +5,7 @@ const WeAndOurGoals = () => {
   return (
     <div className="corps-contenair">
       <section className="whoAreWe">
-        <div className="title jumptarget" id="quiSommeNous">
+        <div className="titleW jumptargetW" id="quiSommeNous">
           <h2>Qui sommes nous?</h2>
         </div>
         <div className="myText">
@@ -23,39 +23,41 @@ const WeAndOurGoals = () => {
         <h1 id="memberTitle">Les membres de l'équipe thérapeutique</h1>
       </section>
       <section id="imgCadreCarte" className="presentationCard">
-        <div  className="contenairCard">
-          <div  className="cardStyle" id="card1">
-            <Card
-              glass
-              glassOption={{ blur: 5, transparency: 0.2 }}
-              background={"white"}
-              hoverType={"up"}
-              bordered
-            >
-              <div id="img-card1"></div>
-            </Card>
-          </div>
-          <div className="cardStyle" id="card2">
-            <Card
-              glass
-              glassOption={{ blur: 5, transparency: 0.2 }}
-              background={"white"}
-              hoverType={"up"}
-              bordered
-            >
-              <div id="img-card2"></div>
-            </Card>
-          </div>
-          <div className="cardStyle" id="card3">
-            <Card
-              glass
-              glassOption={{ blur: 5, transparency: 0.2 }}
-              background={"white"}
-              hoverType={"up"}
-              bordered
-            >
-              <div id="img-card3"></div>
-            </Card>
+        <div className="contenairCard">
+          <div className="contenairCard2">
+            <div className="cardStyle" id="card1">
+              <Card
+                glass
+                glassOption={{ blur: 5, transparency: 0.2 }}
+                background={"white"}
+                hoverType={"up"}
+                bordered
+              >
+                <div id="img-card1"></div>
+              </Card>
+            </div>
+            <div className="cardStyle" id="card2">
+              <Card
+                glass
+                glassOption={{ blur: 5, transparency: 0.2 }}
+                background={"white"}
+                hoverType={"up"}
+                bordered
+              >
+                <div id="img-card2"></div>
+              </Card>
+            </div>
+            <div className="cardStyle" id="card3">
+              <Card
+                glass
+                glassOption={{ blur: 5, transparency: 0.2 }}
+                background={"white"}
+                hoverType={"up"}
+                bordered
+              >
+                <div id="img-card3"></div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
