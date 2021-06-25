@@ -1,0 +1,69 @@
+.contenair-top {
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  z-index: 10;
+  margin-top: 5.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #007CC5;
+  background: -webkit-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -moz-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: -o-linear-gradient(top left, #007CC5 0%, #67CAEF 100%);
+  background: linear-gradient(to bottom right, #007CC5 0%, #67CAEF 100%);
+}
+
+.sub-contenair-top {
+  width: 80%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-flex {
+  width: 50%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.espace-style {
+  margin: 0 1rem 0 0;
+}
+
+.icon-style {
+  font-size: 0.7rem;
+  color: whitesmoke;
+}
+
+.icon-facebook-style {
+  font-size: 0.8rem;
+  color: whitesmoke;
+}
+
+.top-flex span {
+  margin: 0 0 0rem 0.2rem;
+  font-size: smaller;
+}
+
+.contact-style {
+  width: 20%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-style>a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.survole-style:hover {
+  color: white;
+  font-size: large;
+}

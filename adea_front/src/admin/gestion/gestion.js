@@ -1,33 +1,41 @@
 import "./gestion.css";
 
-import React, { useCallback } from "react";
+import React from "react";
 import GestionNavBar from "../../components/gestionnavbar/gestionnavbar";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router";
-
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { logout, selectUser } from "../../features/userSlice";
 
 const Gestion = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
-
+  const history = useHistory();
+  const navigate = (path) => {
+    history.push(path);
+  };
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
+    navigate('/home')
   };
   return (
     <>
       {user ? (
         <div className={"adminC"}>
+          <div className="topBar">
+            <h2 style={{ color: "white" }}>
+              {user.email} {user.name}{" "}
+            </h2>
+            <button onClick={(e) => handleLogout(e)}>Déconnexion</button>
+          </div>
           <GestionNavBar />
-          <h1 style={{color:'red'}} >{user.email}</h1>
-          <button onClick={(e) => handleLogout(e)}>Déconnexion</button>
         </div>
       ) : (
         <>
-          <h1>Vous n'êtes pas connécté</h1>
-          <Link to="/home">Go to home</Link>
+          <div className="">
+            <Link to="/home">Go to home</Link>
+            <h1>Vous n'êtes pas connécté</h1>
+          </div>
         </>
       )}
     </>

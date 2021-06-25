@@ -1,8 +1,7 @@
 import "./login.css";
-import { useDispatch, useSelector } from "react-redux";
-import React, { useState, useCallback, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import React, { useState } from "react";
 import API from "../../api/api";
-
 import { useHistory } from "react-router";
 import { login } from "../../features/userSlice";
 
@@ -40,6 +39,7 @@ const Login = () => {
       .catch((error) => {
         console.log(error);
       });
+      e.target.reset()
   };
   return (
     <div className={"wrapper"}>

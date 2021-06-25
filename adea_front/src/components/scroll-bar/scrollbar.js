@@ -1,11 +1,16 @@
 import "./scrollbar.css";
-import ProgressBar from "react-scroll-progress-bar";
+import ProgressBar from "react-progressbar-on-scroll";
 import React from "react";
 
 const ScrollBar = () => {
   return (
     <div className={"myScroll"}>
-      <ProgressBar bgcolor="#0000FF" />
+      <ProgressBar
+        height={7}
+        color="#94dde2"
+        gradient={true}
+        gradientColor="#225fba"
+      />
     </div>
   );
 };
